@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cardiocheck.netlify.app/sitemap.xml
+
+# Disallow admin pages if any in the future
+Disallow: /admin/
+Disallow: /_next/
