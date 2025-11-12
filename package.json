@@ -1,0 +1,36 @@
+{
+  "name": "cardio-check-landing",
+  "version": "1.0.0",
+  "description": "Landing page para CardioCheck - Centro de Diagnóstico y Prevención Cardiovascular",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server public/",
+    "build": "echo 'Build process to be implemented'",
+    "dev": "live-server public/ --port=3000 --open=/index.html",
+    "test": "echo 'Tests to be implemented'"
+  },
+  "keywords": [
+    "cardiocheck",
+    "cardiovascular",
+    "diagnostico",
+    "prevencion",
+    "salud",
+    "cardiologia",
+    "landing-page",
+    "website"
+  ],
+  "author": "CardioCheck Development Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/[usuario]/cardio_check.git"
+  },
+  "bugs": {
+    "url": "https://github.com/[usuario]/cardio_check/issues"
+  },
+  "homepage": "https://github.com/[usuario]/cardio_check#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {}
+}
