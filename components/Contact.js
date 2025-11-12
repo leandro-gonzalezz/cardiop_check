@@ -20,7 +20,7 @@ const contactInfo = [
       </svg>
     ),
     action: () => {
-      const phoneNumber = "5493416123456";
+      const phoneNumber = "5491161137591";
       const message = "Hola, me gustaría agendar un turno en CardioCheck";
       const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank');
