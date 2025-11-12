@@ -93,6 +93,22 @@ Este proyecto utiliza las siguientes tecnologías:
 - [Deployment platform a definir]
 ```
 
+### Elección actual (implementación recomendada)
+
+- Framework: **Next.js (React)** — por su facilidad para SEO, rutas y despliegues estáticos/SSR.
+- Estilizado: **Tailwind CSS** — utilidades, velocidad de desarrollo y consistencia con la `STYLEGUIDE.md`.
+
+Para desarrollar localmente con Next.js y Tailwind:
+
+```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm run dev
+```
+
+
 ---
 
 ## 🚀 Instalación y Configuración
@@ -199,6 +215,21 @@ cardio_check/
 3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
+
+---
+
+## 🎨 Guía de Estilo y Reglas del Proyecto
+
+Este proyecto sigue las reglas definidas en `STYLEGUIDE.md`, que incluyen:
+
+- **Paleta de colores**: CardioCheck (#1E5F8B, #B8E063, etc.)
+- **Tipografía**: Inter y Poppins como fuentes principales
+- **Framework**: Next.js con Tailwind CSS para desarrollo rápido y consistente
+- **Responsive Design**: Mobile-first approach con breakpoints estándar
+- **Componentes**: Estructura modular en `/components/`
+- **Accesibilidad**: Cumplimiento de estándares WCAG
+
+**Consulta `STYLEGUIDE.md` para las reglas completas de desarrollo.**
 
 ---
 

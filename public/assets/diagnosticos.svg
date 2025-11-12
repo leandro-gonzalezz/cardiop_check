@@ -1,0 +1,46 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo con gradiente suave -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardioGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E5F8B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A90B8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Monitor ECG -->
+  <rect x="50" y="80" width="180" height="120" rx="8" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+  <rect x="60" y="90" width="160" height="80" fill="#1a2332"/>
+  
+  <!-- Línea de ECG */
+  <polyline points="70,130 90,130 95,110 105,150 115,130 135,130 140,120 150,140 160,130 180,130 185,125 195,135 205,130 210,130" 
+            stroke="#B8E063" stroke-width="2" fill="none"/>
+  
+  <!-- Corazón estilizado -->
+  <path d="M300 120 C300 110, 310 100, 320 110 C330 100, 340 110, 340 120 C340 140, 320 160, 300 180 C280 160, 260 140, 260 120 C260 110, 270 100, 280 110 C290 100, 300 110, 300 120 Z" 
+        fill="url(#cardioGradient)"/>
+  
+  <!-- Pulso del corazón -->
+  <circle cx="300" cy="130" r="3" fill="#B8E063">
+    <animate attributeName="r" values="3;8;3" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Elementos decorativos -->
+  <circle cx="80" cy="50" r="4" fill="#B8E063" opacity="0.6"/>
+  <circle cx="350" cy="60" r="3" fill="#4A90B8" opacity="0.8"/>
+  <circle cx="120" cy="250" r="5" fill="#1E5F8B" opacity="0.4"/>
+  
+  <!-- Texto -->
+  <text x="200" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1E5F8B">
+    Diagnósticos Especializados
+  </text>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">
+    ECG • Ecocardiogramas • Holter
+  </text>
+</svg>

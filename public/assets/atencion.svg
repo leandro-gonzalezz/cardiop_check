@@ -1,0 +1,57 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo con gradiente -->
+  <defs>
+    <linearGradient id="integralBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fefce8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fef3c7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="doctorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90B8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E5F8B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#integralBg)"/>
+  
+  <!-- Figura del doctor/profesional -->
+  <circle cx="150" cy="90" r="25" fill="#f4a261"/>
+  <rect x="130" y="115" width="40" height="60" rx="5" fill="#ffffff" stroke="url(#doctorGradient)" stroke-width="2"/>
+  
+  <!-- Estetoscopio -->
+  <path d="M145 125 Q145 135, 155 135 Q165 135, 165 125" stroke="#1E5F8B" stroke-width="2" fill="none"/>
+  <circle cx="145" cy="125" r="3" fill="#1E5F8B"/>
+  <circle cx="165" cy="125" r="3" fill="#1E5F8B"/>
+  <circle cx="155" cy="140" r="6" fill="none" stroke="#1E5F8B" stroke-width="2"/>
+  
+  <!-- Paciente (representado abstractamente) -->
+  <circle cx="280" cy="100" r="20" fill="#e9c46a"/>
+  <rect x="265" y="120" width="30" height="45" rx="3" fill="#f4a261"/>
+  
+  <!-- Conexión/cuidado (línea de comunicación) -->
+  <path d="M175 130 Q215 120, 255 130" stroke="#B8E063" stroke-width="3" fill="none" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Símbolos de atención integral -->
+  <circle cx="200" cy="180" r="35" fill="#ffffff" stroke="#1E5F8B" stroke-width="2"/>
+  <path d="M185 180 L195 190 L215 170" stroke="#B8E063" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Elementos decorativos -->
+  <rect x="50" y="80" width="60" height="40" rx="5" fill="#ffffff" stroke="#4A90B8" stroke-width="1"/>
+  <rect x="55" y="85" width="50" height="8" fill="#f0f9ff"/>
+  <rect x="55" y="95" width="35" fill="#f0f9ff"/>
+  <rect x="55" y="105" width="45" fill="#f0f9ff"/>
+  
+  <rect x="330" y="160" width="50" height="30" rx="3" fill="#ffffff" stroke="#4A90B8" stroke-width="1"/>
+  <circle cx="340" cy="170" r="3" fill="#B8E063"/>
+  <circle cx="350" cy="170" r="3" fill="#4A90B8"/>
+  <circle cx="360" cy="170" r="3" fill="#B8E063"/>
+  
+  <!-- Texto -->
+  <text x="200" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1E5F8B">
+    Atención Integral
+  </text>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">
+    Consultas • Seguimiento • Planes Personalizados
+  </text>
+</svg>

@@ -1,13 +1,14 @@
 {
   "name": "cardio-check-landing",
   "version": "1.0.0",
-  "description": "Landing page para CardioCheck - Centro de Diagnóstico y Prevención Cardiovascular",
-  "main": "index.js",
+  "private": true,
+  "description": "Landing page para CardioCheck - Centro de Diagnóstico y Prevención Cardiovascular (Next.js + Tailwind)",
   "scripts": {
-    "start": "live-server public/",
-    "build": "echo 'Build process to be implemented'",
-    "dev": "live-server public/ --port=3000 --open=/index.html",
-    "test": "echo 'Tests to be implemented'"
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "keywords": [
     "cardiocheck",
@@ -29,8 +30,17 @@
     "url": "https://github.com/[usuario]/cardio_check/issues"
   },
   "homepage": "https://github.com/[usuario]/cardio_check#readme",
-  "devDependencies": {
-    "live-server": "^1.2.2"
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "tailwindcss": "latest",
+    "postcss": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "prettier": "latest"
+  }
 }

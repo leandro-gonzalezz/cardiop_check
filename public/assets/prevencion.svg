@@ -1,0 +1,51 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo con gradiente -->
+  <defs>
+    <linearGradient id="preventionBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dcfce7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B8E063;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9fd65a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#preventionBg)"/>
+  
+  <!-- Escudo protector -->
+  <path d="M200 50 L240 80 L240 140 C240 160, 220 180, 200 190 C180 180, 160 160, 160 140 L160 80 Z" 
+        fill="url(#heartGradient)" stroke="#86b842" stroke-width="2"/>
+  
+  <!-- Corazón dentro del escudo -->
+  <path d="M200 100 C200 95, 205 90, 210 95 C215 90, 220 95, 220 100 C220 110, 210 120, 200 130 C190 120, 180 110, 180 100 C180 95, 185 90, 190 95 C195 90, 200 95, 200 100 Z" 
+        fill="#ffffff"/>
+  
+  <!-- Checkmark -->
+  <path d="M190 105 L198 113 L215 96" stroke="#86b842" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Elementos de salud -->
+  <circle cx="120" cy="120" r="20" fill="#ffffff" stroke="#B8E063" stroke-width="2"/>
+  <path d="M115 120 L125 120 M120 115 L120 125" stroke="#B8E063" stroke-width="2"/>
+  
+  <circle cx="280" cy="120" r="20" fill="#ffffff" stroke="#B8E063" stroke-width="2"/>
+  <circle cx="280" cy="120" r="8" fill="#B8E063"/>
+  
+  <!-- Ondas de prevención -->
+  <circle cx="200" cy="130" r="30" fill="none" stroke="#B8E063" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="30;50;30" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="130" r="40" fill="none" stroke="#B8E063" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="40;60;40" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.05;0.3" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Texto -->
+  <text x="200" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1E5F8B">
+    Prevención Cardiovascular
+  </text>
+  <text x="200" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">
+    Evaluación de Riesgo • Estilo de Vida
+  </text>
+</svg>
