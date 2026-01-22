@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-white text-dark font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-extrabold;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl lg:text-3xl font-semibold;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl lg:text-2xl font-semibold;
+  }
+
+  h6 {
+    @apply text-base md:text-lg lg:text-xl font-semibold;
+  }
+}
+
+@layer components {
+  /* Navigation Links */
+  .nav-link {
+    @apply font-medium text-dark px-4 py-2 rounded-xl transition-all duration-300 relative text-sm tracking-wide;
+  }
+
+  .nav-link:hover {
+    @apply text-primary bg-gray-50 -translate-y-0.5;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 -translate-x-1/2;
+  }
+
+  .nav-link:hover::after {
+    @apply w-4/5;
+  }
+
+  /* Mobile Navigation Links */
+  .mobile-nav-link {
+    @apply font-medium text-dark px-4 py-3 rounded-lg transition-all duration-200 block;
+  }
+
+  .mobile-nav-link:hover {
+    @apply text-primary bg-gray-50;
+  }
+
+  /* WhatsApp Buttons */
+  .whatsapp-btn {
+    @apply bg-gradient-to-br from-[#25D366] to-[#20C757] text-white px-5 py-3 rounded-xl font-semibold text-sm cursor-pointer transition-all duration-300 shadow-lg shadow-[#25D366]/30 flex items-center gap-2 border-0;
+  }
+
+  .whatsapp-btn:hover {
+    @apply -translate-y-0.5 shadow-xl shadow-[#25D366]/40;
+  }
+
+  .whatsapp-btn:active {
+    @apply translate-y-0;
+  }
+
+  .whatsapp-btn-medical {
+    @apply bg-gradient-to-br from-primary to-primary-light text-white px-5 py-3 rounded-xl font-semibold text-sm cursor-pointer transition-all duration-300 shadow-lg shadow-primary/30 flex items-center gap-2 border-2 border-white/20;
+  }
+
+  .whatsapp-btn-medical:hover {
+    @apply -translate-y-0.5 shadow-xl shadow-primary/40 border-white/30;
+  }
+
+  .whatsapp-btn-medical:active {
+    @apply translate-y-0;
+  }
+
+  /* Logo Components */
+  .logo-container {
+    @apply flex items-center gap-3;
+  }
+
+  .logo-image {
+    @apply h-12 w-12 rounded-full object-cover shadow-lg border-2 border-accent transition-all duration-300;
+  }
+
+  .logo-image:hover {
+    @apply scale-105 shadow-xl;
+  }
+
+  .logo-text {
+    @apply font-heading font-bold text-2xl text-primary tracking-tight leading-none m-0;
+  }
+
+  .logo-subtitle {
+    @apply text-xs text-gray-500 font-medium tracking-wider uppercase m-0 leading-none;
+  }
+
+  /* Button Base */
+  .btn {
+    @apply inline-block px-6 py-3 font-semibold rounded-lg transition-all duration-300 cursor-pointer border-0;
+  }
+
+  .btn:hover {
+    @apply -translate-y-0.5;
+  }
+}
+
+@layer utilities {
+  /* Custom animations */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Accessibility improvements */
+  :focus {
+    @apply outline-primary/30 outline-offset-2 outline-2;
+  }
+
+  /* Smooth transitions for interactive elements */
+  a, button {
+    @apply transition-all duration-300;
+  }
+}

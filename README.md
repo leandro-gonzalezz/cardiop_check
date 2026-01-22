@@ -1,272 +1,146 @@
-# CardioCheck - Centro de Diagnóstico y Prevención Cardiovascular
+# CardioCheck - Landing Page
 
-![CardioCheck Logo](assets/logo-cardiocheck.png)
+Landing page profesional para CardioCheck, Centro de Diagnóstico y Prevención Cardiovascular en Formosa, Argentina.
 
-## 🔍 Acerca de CardioCheck
+## 🚀 Stack Tecnológico
 
-**CardioCheck** es un centro especializado en **diagnóstico y prevención cardiovascular** que combina tecnología avanzada con atención personalizada para cuidar tu corazón en cada etapa de la vida.
+- **React 18** - Biblioteca de UI moderna y eficiente
+- **Vite** - Build tool ultrarrápido para desarrollo
+- **Tailwind CSS** - Framework de CSS utility-first
+- **React Router** - Navegación del lado del cliente
+- **ESLint** - Linter para mantener código limpio
 
-### 🎯 Nuestra Misión
-En CardioCheck nos especializamos en la **prevención y diagnóstico temprano** de enfermedades cardiovasculares. Combinamos un abordaje integral con atención personalizada para cuidar tu corazón antes, durante y después de cada estudio.
+## 📋 Requisitos Previos
 
-### 💙 ¿Quiénes Somos?
-Somos un equipo de profesionales dedicados a la salud cardiovascular, comprometidos con brindar servicios de alta calidad utilizando tecnología de vanguardia y un enfoque humano y personalizado.
+- Node.js 18+ 
+- npm o yarn
 
----
+## 🛠️ Instalación
 
-## 🌟 Servicios
-
-### 📊 Diagnósticos Especializados
-- Electrocardiogramas (ECG)
-- Ecocardiogramas
-- Pruebas de esfuerzo
-- Holter 24 horas
-- Monitoreo ambulatorio de presión arterial (MAPA)
-- Estudios Doppler vascular
-
-### 🛡️ Prevención Cardiovascular
-- Evaluaciones de riesgo cardiovascular
-- Programas de prevención personalizada
-- Seguimiento y control de factores de riesgo
-- Asesoramiento en estilo de vida saludable
-
-### 👥 Atención Integral
-- Consultas cardiológicas especializadas
-- Interpretación de estudios
-- Planes de tratamiento personalizados
-- Seguimiento continuo del paciente
-
----
-
-## 🎨 Identidad Visual
-
-### Paleta de Colores
-```css
-:root {
-  --primary-blue: #1E5F8B;        /* Azul principal del fondo */
-  --accent-green: #B8E063;        /* Verde vibrante del botón */
-  --white: #FFFFFF;               /* Texto y elementos principales */
-  --dark: #2C2C2C;               /* Textos oscuros */
-  --light-blue: #4A90B8;         /* Azul claro para variaciones */
-}
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/[usuario]/cardio_check.git
+cd cardio_check
 ```
 
-### Tipografía
-- **Fuente Principal**: Sans-serif moderna y legible
-- **Estilo**: Limpio, profesional y accesible
-
----
-
-## 📱 Presencia Digital
-
-### Redes Sociales
-- **Instagram**: [@cardiocheckfsa](https://www.instagram.com/cardiocheckfsa/)
-- **Última actualización**: 25 de Agosto
-
-### Contacto
-- 📍 **Ubicación**: [Dirección a completar]
-- ☎️ **Teléfono**: [Número a completar]
-- 📧 **Email**: [Email a completar]
-- 🌐 **Sitio Web**: [URL a completar]
-
----
-
-## 🛠️ Tecnologías del Proyecto
-
-Este proyecto utiliza las siguientes tecnologías:
-
+2. Instalar dependencias:
 ```bash
-# Frontend
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- [Framework a definir: React/Vue/Angular]
-
-# Estilizado
-- CSS Grid/Flexbox
-- Responsive Design
-- Mobile-First Approach
-
-# Herramientas
-- Git & GitHub
-- [Bundler a definir]
-- [Deployment platform a definir]
-```
-
-### Elección actual (implementación recomendada)
-
-- Framework: **Next.js (React)** — por su facilidad para SEO, rutas y despliegues estáticos/SSR.
-- Estilizado: **Tailwind CSS** — utilidades, velocidad de desarrollo y consistencia con la `STYLEGUIDE.md`.
-
-Para desarrollar localmente con Next.js y Tailwind:
-
-```bash
-# Instalar dependencias
 npm install
+```
 
-# Ejecutar en modo desarrollo
+## 🏃‍♂️ Desarrollo
+
+Iniciar el servidor de desarrollo:
+```bash
 npm run dev
 ```
 
+El sitio estará disponible en `http://localhost:3001`
 
----
+## 🏗️ Build para Producción
 
-## 🚀 Instalación y Configuración
-
-### Prerrequisitos
+Crear build optimizado:
 ```bash
-# Node.js (versión recomendada)
-node --version
-
-# npm o yarn
-npm --version
+npm run build
 ```
 
-### Instalación
+Los archivos se generarán en la carpeta `dist/`
+
+## 👀 Preview del Build
+
+Para previsualizar el build de producción localmente:
 ```bash
-# Clonar el repositorio
-git clone https://github.com/[usuario]/cardio_check.git
-
-# Navegar al directorio
-cd cardio_check
-
-# Instalar dependencias
-npm install
-
-# Ejecutar en modo desarrollo
-npm start
+npm run preview
 ```
-
----
 
 ## 📁 Estructura del Proyecto
 
 ```
-cardio_check/
-├── 📁 src/
-│   ├── 📁 components/
-│   │   ├── Header/
-│   │   ├── Hero/
-│   │   ├── Services/
-│   │   ├── About/
-│   │   ├── Contact/
-│   │   └── Footer/
-│   ├── 📁 styles/
-│   │   ├── globals.css
-│   │   ├── variables.css
-│   │   └── components/
-│   ├── 📁 assets/
-│   │   ├── images/
-│   │   ├── icons/
-│   │   └── logo/
-│   └── 📁 utils/
-├── 📁 public/
-├── package.json
-├── README.md
-└── .gitignore
+cardiocheck-fsa/
+├── public/              # Archivos estáticos (imágenes, favicon, etc.)
+│   └── assets/          # Imágenes y recursos
+├── src/
+│   ├── components/      # Componentes React reutilizables
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Services.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   ├── pages/           # Páginas de la aplicación
+│   │   └── Home.jsx
+│   ├── utils/           # Utilidades y helpers
+│   ├── App.jsx          # Componente principal
+│   ├── main.jsx         # Punto de entrada
+│   └── index.css        # Estilos globales con Tailwind
+├── index.html           # HTML principal
+├── vite.config.js       # Configuración de Vite
+├── tailwind.config.js   # Configuración de Tailwind CSS
+├── postcss.config.js    # Configuración de PostCSS
+└── package.json         # Dependencias y scripts
+
 ```
 
----
+## 🎨 Características
 
-## 🎯 Funcionalidades Principales
+- ✅ Diseño responsive y mobile-first
+- ✅ Optimización SEO con meta tags y structured data
+- ✅ Integración con WhatsApp para contacto directo
+- ✅ Animaciones suaves y transiciones
+- ✅ Componentes modulares y reutilizables
+- ✅ Tailwind CSS para estilos consistentes
+- ✅ Build optimizado para producción
+- ✅ Hot Module Replacement (HMR) en desarrollo
 
-### 🏠 Landing Page
-- [x] Hero Section con mensaje principal
-- [x] Sección "¿Quiénes Somos?"
-- [x] Catálogo de Servicios
-- [x] Información de Contacto
-- [x] Integración con Redes Sociales
-- [x] Diseño Responsive
+## 📱 Secciones
 
-### 📱 Características Técnicas
-- [x] Diseño Mobile-First
-- [x] Optimización para SEO
-- [x] Carga rápida de imágenes
-- [x] Accesibilidad Web (WCAG)
-- [x] Compatible con todos los navegadores
+1. **Header** - Navegación sticky con menú responsive
+2. **Hero** - Sección principal con CTA
+3. **Quiénes Somos** - Información sobre el centro médico
+4. **Servicios** - Listado de servicios cardiovasculares
+5. **Contacto** - Información de contacto y ubicación
+6. **Footer** - Enlaces y redes sociales
 
----
+## 🔧 Scripts Disponibles
 
-## 🌟 Roadmap
+- `npm run dev` - Inicia servidor de desarrollo
+- `npm run build` - Crea build de producción
+- `npm run preview` - Previsualiza el build
+- `npm run lint` - Ejecuta ESLint
+- `npm run format` - Formatea código con Prettier
 
-### Fase 1 - Landing Page ✅
-- [x] Diseño y maquetación
-- [x] Implementación responsive
-- [x] Integración de contenido
+## 🌐 Deployment
 
-### Fase 2 - Funcionalidades Avanzadas 🔄
-- [ ] Sistema de citas online
-- [ ] Portal del paciente
-- [ ] Chat en vivo
-- [ ] Blog de salud cardiovascular
+### Netlify
 
-### Fase 3 - Optimización 🔮
-- [ ] PWA (Progressive Web App)
-- [ ] Optimización avanzada de performance
-- [ ] Analytics y métricas
-- [ ] A/B Testing
+1. Conectar repositorio en Netlify
+2. Configurar build:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+3. Deploy automático en cada push
 
----
+### Vercel
 
-## 🤝 Contribuir
+```bash
+npm i -g vercel
+vercel
+```
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+### Hosting tradicional
 
----
+1. Ejecutar `npm run build`
+2. Subir contenido de la carpeta `dist/` al servidor
 
-## 🎨 Guía de Estilo y Reglas del Proyecto
+## 📞 Contacto
 
-Este proyecto sigue las reglas definidas en `STYLEGUIDE.md`, que incluyen:
-
-- **Paleta de colores**: CardioCheck (#1E5F8B, #B8E063, etc.)
-- **Tipografía**: Inter y Poppins como fuentes principales
-- **Framework**: Next.js con Tailwind CSS para desarrollo rápido y consistente
-- **Responsive Design**: Mobile-first approach con breakpoints estándar
-- **Componentes**: Estructura modular en `/components/`
-- **Accesibilidad**: Cumplimiento de estándares WCAG
-
-**Consulta `STYLEGUIDE.md` para las reglas completas de desarrollo.**
-
----
+- **Ubicación**: Mitre N° 55, Ciudad de Formosa, Argentina
+- **Teléfono**: 03705-050247 / 3705 053936
+- **Instagram**: [@cardiocheckfsa](https://www.instagram.com/cardiocheckfsa/)
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT - ve el archivo [LICENSE](LICENSE) para más detalles.
+MIT © CardioCheck Development Team
 
 ---
 
-## 👥 Equipo
-
-### Desarrolladores
-- **[Tu nombre]** - *Desarrollo Frontend* - [@tu-github](https://github.com/tu-usuario)
-
-### CardioCheck Team
-- **Equipo Médico** - *Contenido especializado y revisión médica*
-- **Marketing** - *Contenido y estrategia digital*
-
----
-
-## 📞 Contacto del Proyecto
-
-Para consultas sobre el desarrollo del sitio web:
-- 📧 **Email**: [tu-email@ejemplo.com]
-- 💼 **LinkedIn**: [Tu perfil de LinkedIn]
-- 🐙 **GitHub**: [@tu-usuario](https://github.com/tu-usuario)
-
----
-
-<div align="center">
-
-### 💙 CardioCheck - Cuidamos tu corazón con tecnología y dedicación
-
-**Diagnóstico • Prevención • Cardiovascular**
-
----
-
-*Última actualización: Noviembre 2025*
-
-</div>
+Desarrollado con ❤️ por El Templo - Diseños Webs
